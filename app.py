@@ -100,7 +100,7 @@ if uploaded_files:
 
                             # Redimensiona
                             imagem_pil = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
-                            imagem_redimensionada = imagem_pil.resize((560, 796), Image.LANCZOS)
+                            imagem_redimensionada = imagem_pil.resize((820, 1166), Image.LANCZOS)
                             imagem_redimensionada.save(caminho_arquivo, "JPEG", quality=95)
 
                             total_extraidas += 1
